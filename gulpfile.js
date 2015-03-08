@@ -17,7 +17,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('copy', function() {
-    gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/requirejs/require.js', 'node_modules/requirejs-text/text.js'])
+    gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/jquery/dist/jquery.min.map', 'node_modules/requirejs/require.js', 'node_modules/requirejs-text/text.js'])
         .pipe(gulp.dest('public/lib/'))
     gulp.src(['node_modules/bootstrap/fonts/*'])
         .pipe(gulp.dest('public/fonts/'))
